@@ -31,7 +31,7 @@ app.post('/users', (request, response) => {
    
   if(userNameExists){
     return response.status(400).json({error: "Usuário já existe!"});
-}
+  }
 
   const user = { 
     id: uuidv4(),
